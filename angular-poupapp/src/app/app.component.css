@@ -1,0 +1,44 @@
+.app {
+  min-height: 100vh;
+  padding: 0 3.75rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.barra-lateral {
+  width: 17.625rem;
+}
+
+.conteudo-principal {
+  padding: 5rem 0;
+  flex-basis: 55.875rem;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+
+@media screen and (max-width: 68rem) {
+  .app {
+    padding: 4rem 3.75rem 4rem;
+  }
+
+  .barra-lateral {
+    width: 3.75rem;
+  }
+
+  .conteudo-principal {
+    padding: 0;
+    flex-basis: 50rem;
+  }
+}
+
+@media screen and (max-width: 50rem) {
+  .app {
+    padding: 1.5rem 1rem;
+
+    flex-direction: column;
+  }
+}

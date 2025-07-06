@@ -1,0 +1,30 @@
+.area-financeira {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-areas:
+    "saldo      saldo"
+    "transacoes contas";
+  grid-template-columns: 1fr 1fr;
+}
+
+.saldo {
+  grid-area: saldo;
+}
+
+.transacoes {
+  grid-area: transacoes;
+}
+
+.contas {
+  grid-area: contas;
+}
+
+@media screen and (max-width: 50rem) {
+  .area-financeira {
+    grid-template-areas:
+      "saldo"
+      "transacoes"
+      "contas";
+    grid-template-columns: 1fr;
+  }
+}

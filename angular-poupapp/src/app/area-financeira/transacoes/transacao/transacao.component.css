@@ -1,0 +1,24 @@
+.transacao {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nome-e-valor {
+  width: 70%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nome {
+  font-weight: 700;
+}
+
+.data-e-conta {
+  width: 30%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

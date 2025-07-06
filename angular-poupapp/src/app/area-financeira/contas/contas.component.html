@@ -1,0 +1,23 @@
+<section class="contas-card">
+  <div class="titulo-wrapper">
+    <h2 class="texto-lg">Minhas contas</h2>
+  </div>
+
+  <div class="corpo-card">
+    <div class="contas-e-botao">
+      <ul>
+        @for (conta of contas(); track conta.nome) {
+          <li class="item-entre-divisorias">
+            <app-conta [conta]="conta" />
+          </li>
+        } @empty {
+          <li aria-hidden="true">
+            Ainda não há contas criadas.
+          </li>
+        }
+      </ul>
+  
+      <app-botao class="botao-adicionar-conta" texto="Adicionar conta" />
+    </div>
+  </div>
+</section>

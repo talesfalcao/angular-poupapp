@@ -1,0 +1,32 @@
+.barra-lateral {
+  background: var(--cabecalho-componentes);
+  height: 100%;
+  padding: 5rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sobre {
+  text-align: center;
+}
+
+@media screen and (max-width: 68rem) {
+  .barra-lateral {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .sobre {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 50rem) {
+  .barra-lateral {
+    padding: 0;
+    background: transparent;
+    align-items: start;
+  }
+}

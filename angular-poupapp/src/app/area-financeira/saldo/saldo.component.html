@@ -1,0 +1,11 @@
+<section class="saldo-card">
+  <div class="titulo-wrapper">
+    <h2 class="texto-lg">Saldo disponível:</h2>
+  </div>
+
+  <div class="corpo-card">
+    <span class="valor texto-xxxl">
+      {{ saldo() | currency:"BRL" }}
+    </span>
+  </div>
+</section>

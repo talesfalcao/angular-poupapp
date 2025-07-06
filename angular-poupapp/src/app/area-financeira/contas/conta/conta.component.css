@@ -1,0 +1,28 @@
+.conta {
+  display: flex;
+  align-items: center;
+}
+
+.banco {
+  width: 70%;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.banco-nome {
+  font-weight: 700;
+}
+
+.saldo {
+  width: 30%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.saldo-texto {
+  font-weight: 700;
+}

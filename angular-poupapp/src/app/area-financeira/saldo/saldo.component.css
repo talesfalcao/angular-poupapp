@@ -1,0 +1,23 @@
+.titulo-wrapper {
+  border-radius: 1.5rem 1.5rem 0rem 0rem;
+  background: var(--cabecalho-componentes);
+  padding: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.corpo-card {
+  border-radius: 0rem 0rem 1.5rem 1.5rem;
+  background: var(--fundo-componentes);
+  padding: 2rem 1rem 1.5rem;
+}
+
+.valor {
+  padding: 1.8rem 0;
+  color: var(--violeta-destaque);
+  font-weight: 700;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

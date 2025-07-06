@@ -1,0 +1,34 @@
+.texto-xxxl {
+  font-size: 2.4375rem;
+  line-height: 125%;
+}
+
+.texto-xxl {
+  font-size: 1.9375rem;
+  line-height: 125%;
+}
+
+.texto-xl {
+  font-size: 1.5625rem;
+  line-height: 125%;
+}
+
+.texto-lg {
+  font-size: 1.25rem;
+  line-height: 125%;
+}
+
+.texto-md {
+  font-size: 1rem;
+  line-height: 120%;
+}
+
+.texto-sm {
+  font-size: 0.8125rem;
+  line-height: 120%;
+}
+
+.texto-xs {
+  font-size: 0.625rem;
+  line-height: 120%;
+}

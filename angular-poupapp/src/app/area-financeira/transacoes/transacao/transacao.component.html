@@ -1,0 +1,11 @@
+<div class="transacao">
+  <div class="nome-e-valor">
+    <span class="nome texto-md">{{ transacao().nome || transacao().tipo }}</span>
+    <span class="texto-md">{{ valor() | currency:"BRL" }}</span>
+  </div>
+
+  <div class="data-e-conta">
+    <span class="texto-md">{{ transacao().data | date:"shortDate" }}</span>
+    <span class="texto-md">{{ transacao().conta }}</span>
+  </div>
+</div>
