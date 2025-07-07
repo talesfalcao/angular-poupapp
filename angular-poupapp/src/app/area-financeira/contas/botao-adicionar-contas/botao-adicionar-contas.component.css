@@ -1,0 +1,35 @@
+.botao-adicionar-conta {
+  margin: 0 auto;
+}
+.icone-carteira {
+    width: 1rem;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.label-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input {
+  padding: 0.5rem 1rem;
+
+  border-radius: 0.5rem;
+  border: 0;
+  background: var(--fundo-componentes);
+}
+
+.legend {
+  margin-bottom: 0.5rem;
+}
+
+.botao-adicionar-conta {
+  margin-left: auto;
+}

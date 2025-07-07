@@ -1,23 +1,23 @@
-<section class="transacoes-card">
-  <div class="titulo-wrapper">
-    <h2 class="texto-lg">Movimentação financeira</h2>
-  </div>
 
-  <div class="corpo-card">
-    <div class="transacoes-e-botao">
-      <ul>
-        @for (transacao of transacoes(); track transacao.id) {
-          <li class="item-entre-divisorias">
-            <app-transacao [transacao]="transacao" />
-          </li>
-        } @empty {
-          <li aria-hidden="true">
-            Ainda não há transações.
-          </li>
-        }
-      </ul>
-  
-      <app-botao class="botao-adicionar-transacao" texto="Adicionar transação" />
-    </div>
+<app-card>
+  <ng-container card-titulo>
+    <img src="icones/moeda.svg" alt="">
+    <h2 class="texto-lg">Movimentação financeira</h2>
+  </ng-container>
+
+  <div card-valor class="transacoes-e-botao">
+    <ul>
+      @for (transacao of transacoes(); track transacao.id) {
+        <li class="item-entre-divisorias">
+          <app-transacao [transacao]="transacao" />
+        </li>
+      } @empty {
+        <li aria-hidden="true">
+          Ainda não há transações.
+        </li>
+      }
+    </ul>
+
+    <app-botao-adicionar-transacao class="botao-adicionar-transacao" (transacaoCriada)="transacaoCriada.emit($event)" [contas]="contas()"/>
   </div>
-</section>
+</app-card>

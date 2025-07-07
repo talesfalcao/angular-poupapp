@@ -1,0 +1,28 @@
+<app-botao class="botao-adicionar-conta" (click)="abrirModal()">
+  <img src="icones/carteira.svg" alt="" class="icone-carteira">
+  Adicionar conta
+</app-botao>
+
+
+<app-modal [(aberto)]="modalAberto">
+  <ng-container modal-cabecalho class="modal-cabecalho">
+    <img src="icones/banco.svg" alt="">
+    <h2 class="text-xl">Adicionar conta</h2>
+  </ng-container>
+
+  <form class="form text-md" (ngSubmit)="aoSubmeter()" ngNativeValidate>
+    <label class="label-grupo">
+      Nome da conta
+      <input [(ngModel)]="novaContaForm.nome" class="input" type="text" name="nome-conta">
+    </label>
+
+    <label class="label-grupo">
+      Valor
+      <input [(ngModel)]="novaContaForm.saldo" class="input" type="number" name="valor-saldo" min="0" step="0.01" placeholder="R$ 500,00" required>
+    </label>
+
+    <app-botao class="botao-adicionar-transacao">
+      Adicionar
+    </app-botao>
+  </form>
+</app-modal>

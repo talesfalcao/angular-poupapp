@@ -1,5 +1,5 @@
 <div class="transacao">
-  <div class="nome-e-valor">
+  <div class="nome-e-valor" [appDestaqueValorNumerico]="valor()">
     <span class="nome texto-md">{{ transacao().nome || transacao().tipo }}</span>
     <span class="texto-md">{{ valor() | currency:"BRL" }}</span>
   </div>

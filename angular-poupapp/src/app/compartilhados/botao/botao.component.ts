@@ -7,5 +7,4 @@ import { Component, input } from '@angular/core';
   styleUrl: './botao.component.css'
 })
 export class BotaoComponent {
-  texto = input.required<string>();
 }
